@@ -73,7 +73,7 @@
     </div>
 
     <div>
-        <footer>  glocery shop</footer>
+        <footer class="footer">  glocery shop</footer>
         <p>  Sweden, halmstad</p>
     </div>
 
@@ -94,9 +94,15 @@
     const backcolor=function(){
        document.getElementById("color").style.color="blue"
     document.getElementById("color").style.backgroundcolor="red"
+    let footer= document.getElementsByTagName("p")[0]
+    footer.innerHTML="fake address"
     }
     
-    
+    const addingcssclass =function(){
+        let ahref = document.getElementsByTagName("a")
+        for (let a of ahref)
+        a.classList.add("selector")
+    }
      </script>
 
 
