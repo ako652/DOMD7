@@ -11,6 +11,7 @@
     <h1 id ="h1">Grocery shop</h1>
     <input type="button" onclick="backcolor()">
     <input type="text" onclick="newhheader()">
+    <input type="button" onclick="addingcssclass()">
     <div>
       <table>
         <tr>
@@ -93,15 +94,16 @@
     
     const backcolor=function(){
        document.getElementById("color").style.color="blue"
-    document.getElementById("color").style.background="red"
+    document.getElementById("color").style.background ="red"
     let footer= document.getElementsByTagName("p")[0]
     footer.innerHTML="fake address"
     }
     
     const addingcssclass =function(){
         let ahref = document.getElementsByTagName("a")
-        for (let a of ahref)
+        for (let a of ahref){
         a.classList.add("selector")
+        }
     }
      </script>
 
